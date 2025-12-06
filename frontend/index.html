@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESQ MATRIX - Advanced Medical Emergency Response System</title>
+    <title>RESQ MATRIX</title>
+    <link rel="icon" type="image/png" href="adi.png">
     <style>
         * {
             margin: 0;
@@ -538,6 +539,9 @@
                 grid-template-columns: 1fr;
             }
         }
+        .sos-button{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -629,7 +633,7 @@
     </section>
 
     <div class="floating-buttons" >
-        <button class="sos-button" onclick="handleSOS()">SOS</button>
+        <a href="x.html"><button class="sos-button" >SOS</button></a>
         <button class="chatbot-button" onclick="handleChatbot()">💬</button>
     </div>
 
@@ -737,15 +741,6 @@
                 }
             });
         });
-
-        // SOS button handler
-        function handleSOS() {
-            if (confirm('EMERGENCY ALERT ACTIVATION\n\nAre you experiencing a medical emergency?\n\nSelecting OK will immediately:\n• Notify emergency medical services\n• Transmit your current location\n• Alert your emergency contacts\n• Access your medical records\n\nPress OK to proceed with emergency protocol.')) {
-                alert('EMERGENCY SERVICES ACTIVATED\n\nEmergency Response Protocol Initiated:\n\n✓ Emergency services have been notified\n✓ Your location has been transmitted\n✓ Emergency contacts are being alerted\n✓ Medical records are accessible to responders\n\nHelp is on the way. Please remain calm.\n\nIf you can safely do so, stay on the line and follow dispatcher instructions.');
-            }
-        }
-
-        // Chatbot button handler
         function handleChatbot() {
             alert('AI MEDICAL ASSISTANT\n\nWelcome to RESQ MATRIX AI Support!\n\nOur intelligent chatbot can help you with:\n• Medical emergency guidance\n• System navigation and support\n• Account and profile management\n• General health inquiries\n• Emergency contact setup\n\nNote: For life-threatening emergencies, please use the SOS button or call 911 immediately.');
         }
