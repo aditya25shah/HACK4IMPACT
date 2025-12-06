@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESQ MATRIX - Advanced Medical Emergency Response System</title>
+    <title>RESQ MATRIX</title>
+    <link rel="icon" type="image/png" href="adi.png">
     <style>
         * {
             margin: 0;
@@ -131,21 +132,24 @@
             margin-bottom: 20px;
             line-height: 1.3;
             letter-spacing: -0.5px;
+            color:#1c1c1c;
         }
 
         .hero-subtitle {
-            font-size: 17px;
+            font-size: 18px;
             margin-bottom: 15px;
             opacity: 0.95;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.6;
+            color:#2B2B2B;
         }
 
         .hero-description {
-            font-size: 15px;
+            font-size: 16px;
             opacity: 0.9;
             line-height: 1.7;
             margin-bottom: 40px;
+            color:#2B2B2B;
         }
 
         .cta-buttons {
@@ -539,6 +543,9 @@
                 grid-template-columns: 1fr;
             }
         }
+        .sos-button{
+            text-decoration: none;
+        }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
@@ -758,15 +765,6 @@
                 }
             });
         });
-
-        // SOS button handler
-        function handleSOS() {
-            if (confirm('EMERGENCY ALERT ACTIVATION\n\nAre you experiencing a medical emergency?\n\nSelecting OK will immediately:\n• Notify emergency medical services\n• Transmit your current location\n• Alert your emergency contacts\n• Access your medical records\n\nPress OK to proceed with emergency protocol.')) {
-                alert('EMERGENCY SERVICES ACTIVATED\n\nEmergency Response Protocol Initiated:\n\n✓ Emergency services have been notified\n✓ Your location has been transmitted\n✓ Emergency contacts are being alerted\n✓ Medical records are accessible to responders\n\nHelp is on the way. Please remain calm.\n\nIf you can safely do so, stay on the line and follow dispatcher instructions.');
-            }
-        }
-
-        // Chatbot button handler
         function handleChatbot() {
             alert('AI MEDICAL ASSISTANT\n\nWelcome to RESQ MATRIX AI Support!\n\nOur intelligent chatbot can help you with:\n• Medical emergency guidance\n• System navigation and support\n• Account and profile management\n• General health inquiries\n• Emergency contact setup\n\nNote: For life-threatening emergencies, please use the SOS button or call 911 immediately.');
         }
